@@ -13,3 +13,15 @@ In this write-up, I’ll walk you through every stage of the process: from buyin
 ![Project Screenshot](images/final-photo-nginx.png)
 
 ---
+
+## Stage 1 – Purchased a Domain and Linked it to My AWS EC2 Instance
+
+I bought a domain using Cloudflare and linked it to my EC2 instance so the site can be accessed by domain name.
+
+**Steps:**
+1. Bought domain on Cloudflare.
+2. Added an **A record** pointing to my EC2 public IPv4.
+3. Allowed inbound **HTTP (port 80)** in EC2 security group.
+4. Waited for DNS to update and tested in browser.
+
+![Stage 1: Domain Overview in Cloudflare](images/stage1-domain.png)
