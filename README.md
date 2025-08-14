@@ -83,3 +83,38 @@ I checked that the domain points to my EC2 and that it’s reachable.
 3. Opened the domain in a browser to confirm the NGINX page loads.
 
 ![Stage 4: DNS/Connectivity Check](images/stage4-verify.png)
+
+## Stage 5 – Customised the NGINX Landing Page
+
+I replaced the default NGINX welcome page with my own custom HTML page.
+
+**Steps:**
+1. Navigated to the NGINX web root:
+   ```bash
+   cd /usr/share/nginx/html
+
+2. Backed up the original file:
+sudo mv index.html index.html.bak
+
+3. Created a new index.html file with my own design.
+
+4. Reloaded NGINX:
+sudo systemctl reload nginx
+
+5. Opened the domain in a browser to confirm my custom page was live.
+---
+
+### **Struggles I Faced**
+```markdown
+## Challenges Faced During the Project
+
+While working on this project, I ran into a couple of issues:
+
+1. **Cloudflare Proxy Setting**  
+   After linking my DNS to EC2, the site wouldn’t load correctly.  
+   I realised that the Cloudflare’s proxy (orange cloud) was causing the issue for my setup.  
+   Turning it off so it showed “DNS only” fixed the problem.
+
+2. **Installing NGINX**  
+   Initially, I had some confusion about the correct commands to install and start NGINX on Amazon Linux 2.  
+   After a bit of troubleshooting and following the correct steps, I got it installed and running successfully.
