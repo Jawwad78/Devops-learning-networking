@@ -46,3 +46,17 @@ I set up an AWS EC2 instance and installed NGINX to serve web content.
  
     ```bash
     systemctl status nginx
+
+## Stage 3 – Linked DNS to EC2 Instance
+
+I connected my Cloudflare domain to the EC2 instance so the site could be reached via the domain name
+
+**Steps:**
+1. Logged into Cloudflare and opened the DNS settings.
+2. Added an **A record**:
+   - Name: @
+   - IPv4 address: EC2 public IPv4
+   - Proxy status: DNS only
+3. Waited a short time for the DNS changes to take effect
+
+![Stage 3 – DNS Settings in Cloudflare](images/stage3-dns-linked.png)
