@@ -79,3 +79,5 @@ I checked that the domain points to my EC2 and that it’s reachable.
   ping  http://nginxjawwad.org/
 
 3. Opened the domain in a browser to confirm the NGINX page loads.
+
+![Stage 4: DNS/Connectivity Check](images/stage4-verify.png)
