@@ -14,14 +14,32 @@ In this write-up, I’ll walk you through every stage of the process: from buyin
 
 ---
 
-## Stage 1 – Purchased a Domain and Linked it to My AWS EC2 Instance
+## Stage 1 – Purchased a Domain
 
-I bought a domain using Cloudflare and linked it to my EC2 instance so the site can be accessed by domain name.
+I bought a domain using **Cloudflare** to use for my NGINX web server project.
 
 **Steps:**
-1. Bought domain on Cloudflare.
-2. Added an **A record** pointing to my EC2 public IPv4.
-3. Allowed inbound **HTTP (port 80)** in EC2 security group.
-4. Waited for DNS to update and tested in browser.
+1. Logged into Cloudflare.
+2. Purchased a new domain name.
+3. Prepared it for linking to my server later.
 
-![Stage 1: Domain Overview in Cloudflare](images/stage1-domain.png)
+![Stage 1: Domain Purchase in Cloudflare](images/stage1-domain.png)
+
+## Stage 2 – Launched EC2 Instance and Installed NGINX
+
+I set up an AWS EC2 instance and installed NGINX to serve web content.
+
+**Steps:**
+1. Opened AWS EC2 dashboard.
+2. Launched a new instance using Amazon Linux 2.
+3. Selected t2.micro (free tier) instance type.
+4. Connected using AWS EC2 Instance Connect in the browser.
+5. Installed NGINX by running these commands:
+
+   ```bash
+   sudo yum -y install nginx
+   sudo systemctl start nginx
+   sudo systemctl enable nginx
+
+6. I then confirmed if nginx was running :
+   systemctl status nginx
