@@ -137,3 +137,8 @@ While working on this project, I ran into a couple of issues:
 2. **Installing NGINX**  
    Initially, I had some confusion about the correct commands to install and start NGINX on Amazon Linux 2.  
    After a bit of troubleshooting and following the correct steps, I got it installed and running successfully.
+
+3. **Connecting to EC2**
+   For this project, I used AWS EC2 Instance Connect (browser-based SSH) to access my server.  
+   In future projects, I will connect via SSH using a `.pem` key from my local terminal, as this is the standard practice in real world DevOps work.
+
