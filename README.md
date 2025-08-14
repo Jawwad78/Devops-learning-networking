@@ -112,7 +112,7 @@ sudo mv index.html index.html.bak
 sudo systemctl reload nginx
 ```
 5. Opened the domain in a browser to confirm my custom page was live.
----
+
 
 
 
