@@ -121,7 +121,7 @@ sudo systemctl reload nginx
 
 
 ### **Struggles I Faced**
-```markdown
+
 ## Challenges Faced During the Project
 
 While working on this project, I ran into a couple of issues:
