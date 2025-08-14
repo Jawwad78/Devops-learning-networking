@@ -69,16 +69,16 @@ I checked that the domain points to my EC2 and that it’s reachable.
 **Steps:**
 1. Looked up the A record:
    ```bash
-   nslookup http://nginxjawwad.org/
+   nslookup nginxjawwad.org
    # or for a shorter version
-   dig +short http://nginxjawwad.org/
+   dig +short nginxjawwad.org
 
 2. Tested basic connectivity:
 
   ```bash
-  ping  http://nginxjawwad.org/
+  ping  nginxjawwad.org
+  ```
 
----
 
 3. Opened the domain in a browser to confirm the NGINX page loads.
 
