@@ -105,11 +105,13 @@ I replaced the default NGINX welcome page with my own custom HTML page.
    ```
 
 2. Backed up the original file:
+```bash
 sudo mv index.html index.html.bak
 ```
 3. Created a new index.html file with my own design.
 
 4. Reloaded NGINX:
+```bash
 sudo systemctl reload nginx
 ```
 5. Opened the domain in a browser to confirm my custom page was live.
