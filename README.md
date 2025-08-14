@@ -10,6 +10,6 @@ In this write-up, I’ll walk you through every stage of the process: from buyin
 **Visit my project:** http://nginxjawwad.org/  
 *(This demo will only be live temporarily for the Networking module)*
 
-![Project Screenshot](final-photo-nginx.png)
+![Project Screenshot](images/final-photo-nginx.png)
 
 ---
