@@ -2,7 +2,7 @@
 
 For this Networking module, I deployed my own NGINX web server on an AWS EC2 instance and connected it to a custom domain purchased through Cloudflare.
 
-In this write-up, I’ll walk you through every stage of the process: from buying the domain to setting up DNS records, configuring the server, and customising the landing page. 
+I’ll walk you through every stage of the process: from buying the domain to setting up DNS records, configuring the server, and customising the landing page. 
 
 ---
 
@@ -59,4 +59,23 @@ I connected my Cloudflare domain to the EC2 instance so the site could be reache
    - Proxy status: DNS only
 3. Waited a short time for the DNS changes to take effect
 
-![Stage 3 – DNS Settings in Cloudflare](images/stage3-dns-linked.png)
+![Stage 3: DNS Settings in Cloudflare](images/stage3-dns-linked.png)
+
+
+## Stage 4 – Verified DNS and Connectivity
+
+I checked that the domain points to my EC2 and that it’s reachable.
+
+**Steps:**
+1. Looked up the A record:
+   ```bash
+   nslookup http://nginxjawwad.org/
+   # or for a shorter version
+   dig +short http://nginxjawwad.org/
+
+2. Tested basic connectivity:
+
+  ```bash
+  ping  http://nginxjawwad.org/
+
+3. Opened the domain in a browser to confirm the NGINX page loads.
