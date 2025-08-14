@@ -33,13 +33,16 @@ I set up an AWS EC2 instance and installed NGINX to serve web content.
 1. Opened AWS EC2 dashboard.
 2. Launched a new instance using Amazon Linux 2.
 3. Selected t2.micro (free tier) instance type.
-4. Connected using AWS EC2 Instance Connect in the browser.
-5. Installed NGINX by running these commands:
+4.  Configured security group rules to allow inbound HTTP (port 80) from 0.0.0.0/0.
+5. Connected using AWS EC2 Instance Connect in the browser.
+6. Installed NGINX by running these commands:
 
    ```bash
    sudo yum -y install nginx
    sudo systemctl start nginx
    sudo systemctl enable nginx
 
-6. I then confirmed if nginx was running :
-   systemctl status nginx
+7. I then confirmed if nginx was running :
+ 
+    ```bash
+    systemctl status nginx
