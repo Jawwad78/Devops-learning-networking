@@ -3,7 +3,6 @@
 For this Networking module, I deployed my own NGINX web server on an AWS EC2 instance and connected it to a custom domain purchased through Cloudflare.
 
 In this write-up, I’ll walk you through every stage of the process: from buying the domain to setting up DNS records, configuring the server, and customising the landing page. 
-You’ll see exactly what I did, the commands I used, and the final working result.
 
 ---
 
