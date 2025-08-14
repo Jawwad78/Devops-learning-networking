@@ -25,6 +25,9 @@ I bought a domain using **Cloudflare** to use for my NGINX web server project.
 
 ![Stage 1: Domain Purchase in Cloudflare](images/stage1-domain.png)
 
+
+
+
 ## Stage 2 – Launched EC2 Instance and Installed NGINX
 
 I set up an AWS EC2 instance and installed NGINX to serve web content.
@@ -47,6 +50,8 @@ I set up an AWS EC2 instance and installed NGINX to serve web content.
     ```bash
     systemctl status nginx
 
+
+
 ## Stage 3 – Linked DNS to EC2 Instance
 
 I connected my Cloudflare domain to the EC2 instance so the site could be reached via the domain name
@@ -60,6 +65,8 @@ I connected my Cloudflare domain to the EC2 instance so the site could be reache
 3. Waited a short time for the DNS changes to take effect
 
 ![Stage 3: DNS Settings in Cloudflare](images/stage3-dns-linked.png)
+
+
 
 
 ## Stage 4 – Verified DNS and Connectivity
@@ -84,6 +91,9 @@ I checked that the domain points to my EC2 and that it’s reachable.
 
 ![Stage 4: DNS/Connectivity Check](images/stage4-verify.png)
 
+
+
+
 ## Stage 5 – Customised the NGINX Landing Page
 
 I replaced the default NGINX welcome page with my own custom HTML page.
@@ -100,9 +110,12 @@ sudo mv index.html index.html.bak
 
 4. Reloaded NGINX:
 sudo systemctl reload nginx
-
+```
 5. Opened the domain in a browser to confirm my custom page was live.
 ---
+
+
+
 
 ### **Struggles I Faced**
 ```markdown
